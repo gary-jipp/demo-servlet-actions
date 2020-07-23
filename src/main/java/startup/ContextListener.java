@@ -9,7 +9,6 @@ import javax.servlet.ServletContextListener;
 import org.apache.log4j.Logger;
 
 import common.LogHelper;
-import common.WebConstants;
 
 /**
  * Called on server startup. Initializes context<br>
@@ -24,7 +23,7 @@ public class ContextListener implements ServletContextListener {
     ServletContext servletContext = event.getServletContext();
 
     // Set the root name for log4j logging
-    LogHelper.setLogRoot(WebConstants.LOGROOT);
+    LogHelper.setLogRoot("demo");
 
     this.logger = LogHelper.getLogger(getClass());
     String instance = servletContext.getRealPath("/");

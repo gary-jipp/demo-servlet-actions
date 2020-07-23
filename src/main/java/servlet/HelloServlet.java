@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Displays the status of the common properties.
  */
+
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
   @Override
