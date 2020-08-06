@@ -21,7 +21,7 @@
     
 	  <resources>
 			<resource>
-        <!-- This is not quite standard, but lets us debug in real-time -->
+        <!-- This is not quite standard, but lets us debug properties in real-time also -->
 				<directory>src/main/java</directory>
 				<targetPath>${project.build.outputDirectory}</targetPath>
 				<includes>
@@ -76,15 +76,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		
-    <!-- Don't include this as a JDBC driver os almost always included in the server -->
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java 
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
-		</dependency>
-		-->
-		
+
 	</dependencies>
 </project>
