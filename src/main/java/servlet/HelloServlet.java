@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Displays the status of the common properties.
+ * Simple Hello World servlet class. All servlets must extend HttpServlet<br>
+ * Notice we are using Annotations instead of web.xml
  */
 
 @WebServlet("/hello")
