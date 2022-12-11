@@ -15,8 +15,8 @@
 ### Builds as Container
 
 2-stage build
-- Maven build compiles and packages war file
-- Tomcat build deploys war file to servlet container
+- Maven image compiles and packages war file
+- Tomcat image deploys war file to servlet container
 
 #### Build
 ```
