@@ -24,3 +24,6 @@ podman build -t demo-servlet -f  Dockerfile
 podman create --name demo -p 8080:8080 demo-servlet 
 podman start demo
 ```
+
+#### Verify Running Container
+`http://<server address>:8080/demo-servlet?id=1234`
