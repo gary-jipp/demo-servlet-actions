@@ -13,7 +13,7 @@
 	<!-- Context Params - stuff our code uses -->
 	<context-param>
 		<param-name>version</param-name>
-		<param-value>1.0.1</param-value>
+		<param-value>1.1.2</param-value>
 	</context-param>
 
 
