@@ -25,8 +25,8 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet:latest
+          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet1:latest
 
       - name: Push Docker Image to Container Registry
         run: |
-          docker push ghcr.io/gary-jipp/demo-servlet:latest
+          docker push ghcr.io/gary-jipp/demo-servlet1:latest
