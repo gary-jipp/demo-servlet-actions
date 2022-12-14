@@ -25,5 +25,5 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build . --file Dockerfile --tag ghcr.io/demo-servlet:latest
-          docker push ghcr.io/demo-servlet:latest
+          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet:latest
+          docker push ghcr.io/gary-jipp/demo-servlet:latest
