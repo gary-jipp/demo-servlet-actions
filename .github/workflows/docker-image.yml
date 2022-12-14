@@ -3,8 +3,12 @@ name: Docker Image CI
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/*.md'
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - '**/*.md'
 
 jobs:
 
@@ -25,8 +29,8 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet1:latest
+          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet:latest
 
       - name: Push Docker Image to Container Registry
         run: |
-          docker push ghcr.io/gary-jipp/demo-servlet1:latest
+          docker push ghcr.io/gary-jipp/demo-servlet:latest
