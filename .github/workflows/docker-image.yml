@@ -34,8 +34,8 @@ jobs:
           tags: |
             ghcr.io/gary-jipp/demo-servlet:latest
             ghcr.io/gary-jipp/demo-servlet:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          # cache-from: type=gha
+          # cache-to: type=gha,mode=max
 
       # - name: Build the Docker image
       #   run: |
