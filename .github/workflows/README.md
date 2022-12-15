@@ -1,6 +1,6 @@
 # Workflows
 
-This directory contains workflow files for GitHub Actions
+This directory contains workflow files for GitHub Actions.  The resulting image is pushed to the GitHub packages for this repository
 
 ### Notes:
   - when pushing an image to GitHub Container registry (ghcr.io) it is pished as a public image by default
