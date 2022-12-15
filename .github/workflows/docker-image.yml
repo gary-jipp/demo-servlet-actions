@@ -27,10 +27,20 @@ jobs:
           username: ${{ github.ACTOR }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build the Docker image
-        run: |
-          docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet:latest
+      - name: Build and Push the Docker image
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: |
+            ghcr.io/gary-jipp/demo-servlet:latest
+            ghcr.io/gary-jipp/demo-servlet:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
-      - name: Push Docker Image to Container Registry
-        run: |
-          docker push ghcr.io/gary-jipp/demo-servlet:latest
+      # - name: Build the Docker image
+      #   run: |
+      #     docker build . -f Dockerfile -t ghcr.io/gary-jipp/demo-servlet:latest
+
+      # - name: Push Docker Image to Container Registry
+      #   run: |
+      #     docker push ghcr.io/gary-jipp/demo-servlet:latest
