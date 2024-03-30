@@ -1,6 +1,6 @@
 # demo-servlet
 
-- Minimal Java servlet . Can be used as a starting point for a servlet application
+- Minimal Java servlet example of Docker image built by GitHub Actions. Can be used as a starting point for a servlet application
 
 
 ### Development
