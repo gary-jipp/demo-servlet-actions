@@ -31,7 +31,7 @@ public class HelloServlet extends HttpServlet {
     PrintWriter out = response.getWriter();
 
     String parameter = request.getParameter("id");
-    out.println("Hello World:  id=" + parameter);
+    out.println("Hello Again Demo World:  id=" + parameter);
   }
 
 }

@@ -1,0 +1,14 @@
+<Context path="/api" reloadable="true" docBase="/home/dev/code/demo-servlet/target/WebContent" workDir="/home/dev/code/demo-servlet\work" >
+<!-- Extra info begin -->
+
+<!-- Need this if Tomcat TDL scanning turned off -->
+<JarScanner>
+
+	<JarScanFilter
+
+		tldScan="${tomcat.util.scan.StandardJarScanFilter.jarsToScan}, jstl-*.jar"/>
+
+</JarScanner>
+
+<!-- Extra info end -->
+</Context>
