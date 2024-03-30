@@ -1,6 +1,6 @@
 # demo-servlet
 
-- Minimal Java servlet example of Docker image built by GitHub Actions. Can be used as a starting point for a servlet application.  Builds docker image and pushes to the GitHub Image registry on push
+Minimal Java servlet example of Docker image built by GitHub Actions. Can be used as a starting point for a servlet application.  Builds docker image and pushes to the GitHub Image registry on push
 
 
 ### Development
