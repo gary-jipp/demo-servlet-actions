@@ -12,7 +12,7 @@
 
 - Right click -> Tomcat -> update context will deploy the project to your tomcat as live code that you can debug. "remove" will undeploy
 
-### Builds as Container
+### Build & Run Container Image - Local
 
 2-stage build
 - Maven image compiles and packages war file
